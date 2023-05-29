@@ -1,16 +1,6 @@
-# Copiar este repositorio de la siguiente manera:
+# Tercera pre entrega curso python
 
-Si ya lo tenías clonado, viendo que existe en tu PC la rama "clase_18", entonces ejecuta el siguiente comando en la terminal, en tu proyecto. Dejará tu rama "clase_18" sin modificar, y creará la rama "clase_19":
-
-**`git pull origin clase_19`**
-
-De lo contrario, en una carpeta nueva, vacía, ejecuta en la terminal el siguiente comando:
-
-**`git clone https://github.com/esthorace/Coderhouse_40445.git`**
-
-Para ver este archivo en VScode con mayor legibilidad, presionar `control + shift + v`
-
-He agregado una carpeta llamada `.vscode` que tiene un archivo llamado `settings.json`. He configurado las extensiones para que vayamos trabajando con lo mismo.
+Repositorio de practica, aun sin estilos
 
 ## Comandos para crear un proyecto y una aplicación
 
@@ -65,13 +55,4 @@ He agregado una carpeta llamada `.vscode` que tiene un archivo llamado `settings
 `python manage.py createsuperuser`
 > Crea un usuario administrador para acceder a 127.0.0.1:8000/admin
 
-## Nota sobre Git y las clases
 
-Puedes cambiar de ramas para ver cada clase.
-
-## Requirements.txt
-
-Este archivo fue creado con el siguiente comando:
-`pip freeze >> requirements.txt`
-
-Si no tienes el entorno virtual creado, puedes abrir el archivo con Visual Studio Code y hacer clic en **Crear ambiente**, luego elegir Venv, luego el intérprete Python (última versión), y finalmente pregunta por las dependencias: elegimos requirements.txt.
