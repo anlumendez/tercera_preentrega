@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block TITULO %}Resultados{% endblock  %}
+
+{% block CONTENIDO %}
+    {% for cliente in clientes_nombre  %}
+        <p>{{cliente.nombre}}</p>
+    {% endfor %}
+
+    <h1>nacimiento</h1>
+    {% for cliente in clientes_nacimiento %}
+        <p>{{cliente}}</p>
+        <p>{{cliente.nacimiento}}</p>
+    {% endfor %}
+
+    <h2>pais</h2>
+    {% for cliente in clientes_pais  %}
+        <p>{{cliente}}</p>
+    {% endfor %}
+
+    <a href="{% url 'index' %}">Ir a menú principal</a>
+    
+{% endblock CONTENIDO %}
+    

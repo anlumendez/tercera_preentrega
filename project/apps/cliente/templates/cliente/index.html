@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block TITULO %}CLIENTES{% endblock %}
+
+{% block CONTENIDO %}
+    {% for cliente in clientes %}
+        <h2>{{ cliente.nombre }}</h2>
+        <p>{{ cliente.apellido }}</p>
+        <p>{{ cliente.nacimiento }}</p>
+        <p>{{ cliente.pais_origen_id }}</p>
+    {% endfor %}
+    <a href="{% url 'cliente:crear_cliente' %}">Crear clientes</a>
+
+    <a href="{% url 'cliente:crear' %}">Crear</a>
+    <br>
+    <a href="{% url 'cliente:prueba_busqueda' %}">Filtrar</a>
+    <br>
+    <a href="{% url 'index' %}">Ir a menú principal</a>
+{% endblock %}
