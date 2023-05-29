@@ -3,5 +3,6 @@
 {% block TITULO %}Home{% endblock %}
 
 {% block CONTENIDO %}
+    <a href="{% url 'home:crear_autor' %}">Crear autor</a>
     <a href="{% url 'index' %}">Ir a menú principal</a>
 {% endblock %}
